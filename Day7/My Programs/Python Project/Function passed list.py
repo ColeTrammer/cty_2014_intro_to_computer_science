@@ -13,25 +13,23 @@ def sort(list2):
             a += 1
         z = 0
         a = 1
-    print list2
+    print(list2)
+
 
 def main():
     while True:
         try:
-                list2 = []
-                current_entry = int(raw_input("Please enter a number"))
-                while current_entry != -99999:
-                    list2.append(current_entry)
-                    current_entry = int(raw_input("Please enter a number"))
-                break
+            list2 = []
+            current_entry = int(input("Please enter a number: "))
+            while current_entry != -99999:
+                list2.append(current_entry)
+                current_entry = int(input("Please enter a number: "))
+            break
         except ValueError:
             ""
 
-
-    print list2
+    print(list2)
     sort(list2)
-
-
 
 
 if __name__ == "__main__":
